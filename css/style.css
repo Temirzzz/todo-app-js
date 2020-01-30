@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+.body-input {
+	margin-top: 60px;
+}
+.body-input__textarea {
+	position: relative;
+}
+
+.body-input__btn {
+	position: absolute;
+}
+
+.body-output {
+	
+}
+.todo-btn {
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+}
+.header-clock {
+	font-size: 25px;
+	font-weight: bold;
+}
+.todoBody {
+	min-height: 10px;
+	width: 100%;
+	padding: 10px 10px;
+	border-radius: 10px;
+	margin: 10px;	
+	font-size: 20px;
+	margin: 10px 0;
+	background: orange;
+}
+
+.agryment {
+	position: absolute;
+	min-height: 200px;
+	min-width: 100px;
+	border: 1px solid black;
+}
+
+.agryInp {
+	background: red;
+}
