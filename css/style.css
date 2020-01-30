@@ -1,7 +1,46 @@
-body {
+* {
 	margin: 0;
 	box-sizing: border-box;
 }
+
+.main-wrapper {
+	width: 100%;
+	
+}
+.secondary-wrapper {
+	max-width: 800px;
+	height: 900px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow-y: auto;
+	background: #FFFAFA;
+}
+/*----------- end-main ---------------*/
+/*------------- header ---------------*/
+
+
+.brand-logo {
+	padding: 10px;
+	font-size: 25px;
+}
+.header-nav {
+	height: 90px;
+	padding: 10px 20px;
+}
+.header__clock {
+	font-size: 25px;
+	font-weight: bold;
+}
+.header-btn {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+/*------------- end-header ---------------*/
+
+/*--------------- body -------------------*/
+
 .body-input {
 	margin-top: 60px;
 }
@@ -11,20 +50,19 @@ body {
 
 .body-input__btn {
 	position: absolute;
+	height: 48px;
+	width: 48px;
+}
+.body-input__btn i {
+	line-height: 48px;	
 }
 
-.body-output {
-	
-}
 .todo-btn {
 	width: 24px;
 	height: 24px;
 	line-height: 24px;
 }
-.header-clock {
-	font-size: 25px;
-	font-weight: bold;
-}
+
 .todoBody {
 	min-height: 10px;
 	width: 100%;
@@ -36,13 +74,41 @@ body {
 	background: orange;
 }
 
-.agryment {
-	position: absolute;
-	min-height: 200px;
-	min-width: 100px;
-	border: 1px solid black;
-}
+/*------------ modal ---------------------*/
 
-.agryInp {
-	background: red;
+.modalWrap {
+	position: absolute;
+	background:rgba(128, 128, 128, .5);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.agryment {
+	min-height: 100px;
+	width: 200px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background: white;
+	padding: 20px;
+	position: absolute;
+	top: 250px;
+	left: 45%;
+}
+.text {
+	padding: 20px;
+}
+.ok, .clBtn {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	line-height: 24px;
+}
+.ok {
+	left: 5px;
+	top: 5px;
+}
+.clBtn {
+	top: 5px;
+	right: 5px;
 }

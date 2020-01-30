@@ -10,14 +10,18 @@
 		<link rel="stylesheet" href="css/style.css">		
 	</head>
 	<body>
-		<header>			
-		  <nav>
-			<div class="nav-wrapper">
-			  <a href="#" class="brand-logo right">ToDo app</a>
-			  <ul id="nav-mobile" class="left hide-on-med-and-down">
-				<a class="waves-effect waves-light btn header-btn"><i class="material-icons left">cloud</i>remove all todos</a>
-				<li class="header-clock"></li>
+
+<div class="main-wrapper">
+	<div class="secondary-wrapper z-depth-5">
+		<header class="header">			
+		  <nav class="header-nav">
+			<div class="nav__wrapp">
+			  <div class="brand-logo center">ToDo app</div>
+			  <ul class="header-ul">				
+				<li class="header__clock"></li>				
+				<li class="waves-effect waves-light btn header-btn right">Remove all Todos</li>
 			  </ul>
+			  
 			</div>
 		  </nav>        
 		</header>
@@ -30,7 +34,7 @@
 						<div class="input-field col s6 offset-s3">
 							<i class="material-icons prefix">mode_edit</i>
 							<textarea id="icon_prefix2" class="materialize-textarea body-input__textarea"></textarea>
-							<a class="btn-floating btn-large waves-effect waves-light red body-input__btn"><i class="material-icons">add</i></a>
+							<button class="btn-floating waves-effect waves-light red body-input__btn"><i class="material-icons">add</i></button>
 							</button>
 						  <label for="icon_prefix2">ToDo</label>
 						</div>
@@ -47,10 +51,9 @@
 				</div>				
 			</div>			
 		</section>
-		
+	</div>
+</div>
             
 		<script src="js/todo.js"></script>
-		<!--<script src="js/main.js"></script>
-		<script src="js/script.js"></script>-->
 	</body>
 </html>
