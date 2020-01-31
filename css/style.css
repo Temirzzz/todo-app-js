@@ -10,8 +10,7 @@
 .secondary-wrapper {
 	max-width: 800px;
 	height: 900px;
-	margin: 0 auto;
-	border: 1px solid black;
+	margin: 0 auto;	
 	border-radius: 10px;
 	overflow-y: auto;
 	background: #FFFAFA;
@@ -31,6 +30,10 @@
 .header__clock {
 	font-size: 25px;
 	font-weight: bold;
+	background: #fff;
+	padding: 0 8px;
+	border-radius: 10px;
+	color: #696969;
 }
 .header-btn {
 	font-size: 12px;
@@ -56,22 +59,30 @@
 .body-input__btn i {
 	line-height: 48px;	
 }
-
-.todo-btn {
-	width: 24px;
-	height: 24px;
-	line-height: 24px;
+.body-output {
+	width: 100%;
 }
 
 .todoBody {
 	min-height: 10px;
 	width: 100%;
-	padding: 10px 10px;
+	padding: 10px 15px;
 	border-radius: 10px;
-	margin: 10px;	
 	font-size: 20px;
-	margin: 10px 0;
-	background: orange;
+	margin: 20px 0;
+	background: rgba(255,140,0, .7);
+	word-break: break-all;
+	position: relative;
+	color: #000000;
+	
+}
+.todo-btn {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: -7px;
+	right: -7px;
 }
 
 /*------------ modal ---------------------*/
@@ -83,6 +94,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 99999;
 }
 .agryment {
 	min-height: 100px;
